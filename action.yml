@@ -1,0 +1,15 @@
+name: 'Amplify CLI Deploy Action'
+description: 'Deploys to Amplify using the CLI'
+inputs:
+  env:
+    description: 'Environment'
+    required: true
+    default: 'dev'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dev }}
+branding:
+  icon: 'github'
+  color: 'green'
