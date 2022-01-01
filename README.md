@@ -8,6 +8,7 @@ Amplify CLI Deploy Action
 
 ## Example usage
 
+```
 uses: actions/checkout@v2
 name: Amplify CLI Deploy Action
   uses: cordobeces/amplify-cli-action@v1.0.0
@@ -17,3 +18,4 @@ name: Amplify CLI Deploy Action
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     AWS_REGION: us-east-1
+```
