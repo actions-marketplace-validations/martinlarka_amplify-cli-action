@@ -9,7 +9,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.dev }}
+    - ${{ inputs.env }}
 branding:
   icon: 'activity'
   color: 'green'
