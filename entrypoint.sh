@@ -7,6 +7,8 @@ if [ -z "$AWS_ACCESS_KEY_ID" ] && [ -z "$AWS_SECRET_ACCESS_KEY" ] ; then
   exit 1
 fi
 
+cd ../..
+
 env=$1
 
 aws_config_file_path="$(pwd)/aws_config_file_path.json"
