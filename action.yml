@@ -11,5 +11,5 @@ runs:
   args:
     - ${{ inputs.dev }}
 branding:
-  icon: 'github'
+  icon: 'activity'
   color: 'green'
