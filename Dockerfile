@@ -1,8 +1,8 @@
-FROM node:14.18.2-alpine3.14
+FROM node:lts
 
 RUN npm config set user 0 && \
   npm config set unsafe-perm true && \
-  npm install -g @aws-amplify/cli@9
+  npm install -g @aws-amplify/cli@latest
 
 COPY entrypoint.sh /entrypoint.sh
 
