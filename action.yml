@@ -1,15 +1,15 @@
-name: 'Amplify CLI Deploy Action'
-description: 'Deploys to Amplify using the CLI'
+name: "Amplify CLI Checkout Action"
+description: "Checkout environment from Amplify using the CLI"
 inputs:
   env:
-    description: 'Environment'
+    description: "Environment"
     required: true
-    default: 'dev'
+    default: "dev"
 runs:
-  using: 'docker'
-  image: 'docker://cordobeces/amplify-cli-action:v1.0.0'
+  using: "docker"
+  image: "docker://cordobeces/amplify-cli-action:v1.0.0"
   args:
     - ${{ inputs.env }}
 branding:
-  icon: 'activity'
-  color: 'green'
+  icon: "activity"
+  color: "green"
