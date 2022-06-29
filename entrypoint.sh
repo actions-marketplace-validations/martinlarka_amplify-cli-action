@@ -14,4 +14,8 @@ echo '{"accessKeyId":"'$AWS_ACCESS_KEY_ID'","secretAccessKey":"'$AWS_SECRET_ACCE
 echo '{"projectPath": "'"$(pwd)"'","defaultEditor":"code","envName":"'$env'"}' > ./amplify/.config/local-env-info.json
 echo '{"'$env'":{"configLevel":"project","useProfile":false,"awsConfigFilePath":"'$aws_config_file_path'"}}' > ./amplify/.config/local-aws-info.json
 
+cat $aws_config_file_path
+
+echo 'TEST'
+
 amplify env checkout $env && amplify pull --yes
