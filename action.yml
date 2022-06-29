@@ -7,7 +7,7 @@ inputs:
     default: "dev"
 runs:
   using: "docker"
-  image: "docker://cordobeces/amplify-cli-action:v1.0.0"
+  image: "docker://martinlarka/amplify-cli-action:v1.0.1"
   args:
     - ${{ inputs.env }}
 branding:

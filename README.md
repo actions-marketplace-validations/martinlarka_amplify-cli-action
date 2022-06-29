@@ -11,7 +11,7 @@ Amplify CLI Deploy Action
 ```
 uses: actions/checkout@v2
 name: Amplify CLI Deploy Action
-  uses: cordobeces/amplify-cli-action@v1.0.0
+  uses: martinlarka/amplify-cli-action@v1.0.0
   with:
     env: dev
   env:
